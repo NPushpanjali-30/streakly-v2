@@ -1,0 +1,106 @@
+.habit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.habit-grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.freeze-btn {
+  background: transparent;
+  border: 1px dashed var(--border);
+  color: var(--text-dim);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  font-size: 0.76rem;
+}
+
+.freeze-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.weekly-summary {
+  margin: -4px 0 20px;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.weekly-summary strong {
+  color: var(--ember);
+  font-family: var(--font-mono);
+}
+
+.freq-badge {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+.freq-due {
+  color: var(--ember);
+}
+
+.freq-done {
+  color: var(--accent);
+}
+
+.all-done-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--accent-dim);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 4px;
+  animation: banner-in 0.4s ease;
+}
+
+@keyframes banner-in {
+  from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0)   scale(1);     }
+}
+
+.all-done-emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.all-done-banner strong {
+  display: block;
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.all-done-banner p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.pin-btn {
+  background: transparent;
+  border: 1px dashed var(--border);
+  color: var(--text-dim);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  font-size: 0.76rem;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.pin-btn:hover {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+
+.pin-btn.pinned {
+  border-color: var(--ember);
+  color: var(--ember);
+  border-style: solid;
+}

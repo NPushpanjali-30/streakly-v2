@@ -1,0 +1,72 @@
+.pomodoro-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 11, 14, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+
+.pomodoro-modal {
+  width: 100%;
+  max-width: 320px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+
+.pomodoro-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.4rem;
+}
+
+.pomodoro-ring {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(
+    var(--accent) calc(var(--progress) * 360deg),
+    var(--bg-raised) 0
+  );
+  transition: background 0.3s linear;
+}
+
+.pomodoro-ring::before {
+  content: "";
+  position: absolute;
+}
+
+.pomodoro-time {
+  background: var(--bg-card);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 1.7rem;
+}
+
+.pomodoro-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.pomodoro-spent {
+  font-size: 0.82rem;
+  text-align: center;
+}

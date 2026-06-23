@@ -1,0 +1,40 @@
+.about-page {
+  max-width: 680px;
+}
+
+.about-block {
+  padding: 20px 22px;
+  margin-bottom: 16px;
+}
+
+.about-block ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-dim);
+}
+
+.about-block li {
+  margin-bottom: 6px;
+}
+
+.meme-block {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  border-color: var(--accent);
+}
+
+.danger-zone {
+  border-color: var(--danger);
+}
+
+.danger-zone p {
+  margin-bottom: 14px;
+}
+
+.export-zone {
+  border-color: var(--accent);
+}
+
+.export-zone p {
+  margin-bottom: 14px;
+}

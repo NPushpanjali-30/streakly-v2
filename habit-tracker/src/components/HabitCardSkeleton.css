@@ -1,0 +1,19 @@
+.habit-card-skeleton {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-left: 3px solid var(--border);
+}
+
+.skel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skel-tag     { width: 70px;  height: 12px; }
+.skel-checkbox{ width: 28px;  height: 28px; border-radius: 50%; }
+.skel-name    { width: 75%;   height: 18px; }
+.skel-streaks { display: flex; gap: 10px; }
+.skel-pill    { flex: 1; height: 46px; border-radius: var(--radius-sm); }
